@@ -6,7 +6,7 @@
 
 module CountIf where
 
--- DEFINISI DAN SPESIFIKASI LIST
+-- DEFINISI DAN SPESIFIKASI LIST..
 {- type List of Int: [ ] atau [e o List] atau [List o e]  
    Definisi type List of Int
    Basis: List of Int kosong adalah list of Int 
