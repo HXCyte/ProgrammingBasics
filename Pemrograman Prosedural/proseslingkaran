@@ -1,0 +1,78 @@
+{ Lengkapi dengan identitas }
+ 
+Program ProsesLingkaran;
+{ Input: 2 buah Lingkaran }
+{ Output: luas, keliling, dan hubungan lingkaran A dan B }
+ 
+{ KAMUS }
+const
+        PI : real = 3.1415;
+type
+        { Definisi Type Koordinat }
+        Koordinat = record
+                       ... { lengkapi dengan komponen type Koordinat }
+        end;
+        { Definisi Type Lingkaran }
+        Lingkaran = record
+                      c : Koordinat; { titik pusat lingkaran }
+                      r : real;      { jari-jari, > 0 }
+        end;
+var
+        A, B : Lingkaran; { variabel untuk lingkaran A dan B }
+        ... { lengkapi dengan variabel yang dibutuhkan }
+ 
+{ FUNGSI DAN PROSEDUR }
+procedure InputLingkaran (var A : Lingkaran);
+{ I.S.: A sembarang }
+{ F.S.: A terdefinisi sesuai dengan masukan pengguna. Pemasukan jari-jari diulangi 
+        sampai didapatkan jari-jari yang benar yaitu r > 0. Pemeriksaan apakah jari-
+        jari valid menggunakan fungsi IsRValid.
+        Jika jari-jari tidak valid, dikeluarkan pesan kesalahan “Jari-jari harus > 0”. }
+{ lengkapi kamus dan algoritma procedure InputLingkaran }
+...
+ 
+function KelilingLingkaran (...) : ...; { lengkapi parameter dan type hasil }
+{ Menghasilkan keliling lingkaran A = 2 * PI * A.r }
+{ Lengkapi kamus lokal dan algoritma fungsi KelilingLingkaran }
+...
+ 
+function LuasLingkaran (...) : ...; { lengkapi parameter dan type hasil }
+{ Menghasilkan luas lingkaran A = PI * A.r * A.r }
+{ Lengkapi kamus lokal dan algoritma fungsi LuasLingkaran }
+...
+ 
+function Jarak (...) : ...;
+{ Menghasilkan jarak antara P1 dan P2 }
+{ Lengkapi kamus lokal dan algoritma fungsi Jarak }
+...
+function HubunganLingkaran (...) : ....;
+{ Menghasilkan integer yang menyatakan hubungan lingkaran A dan B, yaitu:
+  1 = A dan B sama;
+  2 = A dan B berimpit; 
+  3 = A dan B beririsan;
+  4 = A dan B bersentuhan;
+  5 = A dan B saling lepas }
+{ Lengkapi kamus lokal dan algoritma fungsi HubunganLingkaran }
+...
+ 
+{ ALGORITMA PROGRAM UTAMA }
+begin
+        writeln('Masukkan lingkaran A:');
+        ... { Lengkapi dengan pemanggilan prosedur InputLingkaran untuk lingkaran A }
+        writeln('Masukkan lingkaran B:');
+        ... { Lengkapi dengan pemanggilan prosedur InputLingkaran untuk lingkaran B }
+        writeln('Keliling lingkaran A = ', ...); { Lengkapi dengan pemanggilan fungsi 
+                                                   KelilingLingkaran untuk A }
+        writeln('Luas lingkaran A = ', ...); { Lengkapi dengan pemanggilan fungsi LuasLingkaran untuk A }
+        writeln('Keliling lingkaran B = ', ...); { Lengkapi dengan pemanggilan fungsi 
+                                                   KelilingLingkaran untuk B }
+        writeln('Luas lingkaran B = ', ...); { Lengkapi dengan pemanggilan fungsi LuasLingkaran untuk B }
+        write('A dan B adalah ');
+        ... { Lengkapi dengan pemanggilan fungsi HubunganLingkaran dan mengkonversi 
+              integer hasil fungsi menjadi kata-kata sbb.:
+              1 = ‘sama’
+              2 = ‘berimpit’ 
+              3 = ‘beririsan’
+              4 = ‘bersentuhan’
+              5 = ‘saling lepas’ }
+end. 
